@@ -17,5 +17,8 @@
     "url": "https://github.com/LydosSky/message-board/issues"
   },
   "homepage": "https://github.com/LydosSky/message-board#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
