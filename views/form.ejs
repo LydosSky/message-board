@@ -1,0 +1,14 @@
+<%- include('navbar')%>
+
+<form method="POST" action="/new">
+    <h2>Leave Your Message</h2>
+    <div>
+        <label for="user">Your Name</label>
+        <input name="messageUser" type="text" id="user"/>
+    </div>
+    <div>
+        <label for="text">Your Message</label>
+        <textarea cols="30" id="text" name="messageText" rows="10"></textarea>
+    </div>
+    <input type="submit" value="Send Your Message" />
+</form>
