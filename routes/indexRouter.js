@@ -34,7 +34,7 @@ indexRouter.get('/:id', function (req, res) {
     (prev, curr) => (curr.id === req.params.id ? curr : prev),
     null,
   );
-  res.render('detail', { message });
+  res.render('detail', { title: 'Message Detail', message });
 });
 
 indexRouter.post('/new', function (req, res) {

@@ -1,9 +1,7 @@
 <html>
-    <head>
-        <title><%= title %></title>
-    </head>
+    <%- include('./partial/head', { title })%>
     <body>
-        <%- include('navbar')%>
+        <%- include('./partial/navbar')%>
         <% messages.forEach(function(message) { %>
             <div class='card'>
                 <h3><%= message.user %></h3>

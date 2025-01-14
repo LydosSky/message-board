@@ -1,9 +1,12 @@
 <html>
+    <%- include('./partial/head', { title })%>
     <body>
-        <%- include('navbar')%>
-        <h2><%= message.user %></h2>
-        <p><%= message.text %></p>
-        <p><%= message.added.toLocaleDateString('en-US') %></p>
+        <%- include('./partial/navbar')%>
+        <% if (message) { %>
+            <h2><%= message.user %></h2>
+            <p><%= message.text %></p>
+            <p><%= message.added.toLocaleDateString('en-US') %></p>
+        <% } %>
     </body>
 </html>
 
