@@ -1,0 +1,8 @@
+nav.navigation-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+nav.navigation-bar a {
+  text-decoration: none;
+}
