@@ -1,14 +1,19 @@
-<%- include('navbar')%>
+<html>
+    <%- include('./partial/head', {title: "Create New Message"})%>
+    <body>
+        <%- include('./partial/navbar')%>
 
-<form method="POST" action="/new">
-    <h2>Leave Your Message</h2>
-    <div>
-        <label for="user">Your Name</label>
-        <input name="messageUser" type="text" id="user"/>
-    </div>
-    <div>
-        <label for="text">Your Message</label>
-        <textarea cols="30" id="text" name="messageText" rows="10"></textarea>
-    </div>
-    <input type="submit" value="Send Your Message" />
-</form>
+        <form method="POST" action="/new">
+            <h2>Leave Your Message</h2>
+            <div>
+                <label for="user">Your Name</label>
+                <input name="username" type="text" id="user"/>
+            </div>
+            <div>
+                <label for="text">Your Message</label>
+                <textarea cols="30" id="text" name="usermessage" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Send Your Message" />
+    </form>
+    </body>
+</html>
